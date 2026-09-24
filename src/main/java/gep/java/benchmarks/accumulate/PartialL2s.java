@@ -1,0 +1,23 @@
+package gep.java.benchmarks.accumulate;
+
+import gep.java.accumulators.Accumulator;
+
+/** <pre>
+ * java -cp target\benchmarks.jar gep.java.PartialL2s
+ * </pre>
+ * @author palisades dot lakes at gmail dot com
+ * @version 2026-08-21
+ */
+
+
+public class PartialL2s extends Base {
+
+  @Override
+  public final double[] operation (final Accumulator ac,
+                                   final double[] z0,
+                                   final double[] z1) {
+    return ac.clear().partialL2s(z0); }
+
+  @SuppressWarnings("unused")
+  public static final void main (final String[] args)  {
+    Defaults.run("PartialL2s"); } }

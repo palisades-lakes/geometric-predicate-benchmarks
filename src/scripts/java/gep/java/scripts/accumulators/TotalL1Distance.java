@@ -1,0 +1,34 @@
+package gep.java.scripts.accumulators;
+
+import gep.java.accumulators.Accumulator;
+import gep.java.prng.Generator;
+import gep.java.prng.Generators;
+
+/** Benchmark L1 distance.
+ *
+ * <pre>
+ * jy --source 25 src/scripts/java/xfp/java/scripts/TotalL1Distance.java
+ * </pre>
+ * @author palisades dot lakes at gmail dot com
+ * @version 2026-08-21
+ */
+@SuppressWarnings("unused")
+public final class TotalL1Distance {
+
+  public static final void main (final String[] args) {
+    final int dim = (2*1024*1024);
+    final int trys = 8 * 1024;
+    //final Generator g = Generators.make("finite",dim);
+    final Generator g = Generators.make("uniform",dim);
+    final Accumulator a =
+      gep.java.accumulators.BigFloatAccumulator.make();
+    assert a.isExact();
+    for (int i=0;i<trys;i++) {
+      final double[] x0 = (double[]) g.next();
+      final double[] x1 = (double[]) g.next();
+      final double z = a.clear().addL1Distance(x0,x1).doubleValue();
+      assert Double.isFinite(z); } }
+
+  //--------------------------------------------------------------
+}
+//--------------------------------------------------------------

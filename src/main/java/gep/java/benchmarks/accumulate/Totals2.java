@@ -1,0 +1,16 @@
+package gep.java.benchmarks.accumulate;
+
+/** <pre>
+ * j gep.java.Totals2
+ * </pre>
+ * @author palisades dot lakes at gmail dot com
+ * @version 2026-08-21
+ */
+
+@SuppressWarnings("unused")
+public final class Totals2 {
+  public static final void main (final String[] args)  {
+    Defaults.run("TotalL2Norm");
+    Defaults.run("TotalDot");
+    Defaults.run("TotalL2Distance");
+  } }
