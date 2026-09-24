@@ -16,11 +16,11 @@ proceeding with `BigFloat`.
 It is possible that a better Java implementation of expansions might change this,
 but I don't see obvious opportunities for optimization.
 
-There are also issues in the original  
+There are also issues in the original 
 [C code](https://www.cs.cmu.edu/afs/cs/project/quake/public/code/predicates.c),
 eg fetching elements off the end of arrays,
 that I have 'fixed' in the Java implementations,
-and they seem to be working correctly.
+which seem to be working.
 However I would need a better understanding what's assumed implicitly
 (eg non-overlapping elements) in the code
 before I would trust releasing it.
@@ -51,10 +51,11 @@ only reverting to higher precision in the hopefully rare cases when it is necess
 There are 2 predicates of interest, which can be defined for any euclidean 
 space, though at present **R**<sup>2</sup> (actually **Q**<sup>2</sup>) 
 is of primary interest.
-1. There are 3 equivalent ways of viewing this one:
+1. Signed Volume/Orientation  
+There are 3 equivalent ways of viewing this one:
    1. The signed volume (area) of an embedded simplex (eg triangle, tetrahedron, etc)
    2. The orientation (positive or negative) of an embedded simplex.
-   3. A point is on which side of a hyperplane (line).
+   3. On which side of a hyperplane (line) does a point lie.
 
     The second and third are determined by the sign of the signed volume.
 There are reasonable bounds for the error in a `double` calculation of signed
@@ -93,7 +94,7 @@ where
    and the rational value of `a op b` 
      
    This means that the exact rational value of any polynomial evaluated over 
-`double`inputs can be represented by the exact sum of a finite number 'double's.
+`double`inputs can be represented by the exact sum of a finite number `double`s.
 
 2. Error bounds  
 Shewchuk provides a series of error bounds, first for `double` arithmetic, and
