@@ -1,0 +1,25 @@
+Benchmark,Mode,Threads,Samples,Score,Score Error (99.9%),Unit,Param: className,Param: nTriangles,ratio,vs BF
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,2.077686,0.009068,ms/op,ShewchukIntervalTriangle2D,262144,0.864803824692174,0.0422393594195443
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,2.402494,0.015553,ms/op,TriangleD2Eager,262144,1,0.0488427065347212
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,2.67695,0.024212,ms/op,DoubleNonRobust,262144,1.11423795439239,0.0544223974162357
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,2.704912,0.022278,ms/op,FastMacro,262144,1.12587669313638,0.0549908649171426
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,2.708529,0.028425,ms/op,Fast,262144,1.12738221198471,0.0550643985324341
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,2.711966,0.019812,ms/op,InCircleNormalized,262144,1.12881280868964,0.0551342727474623
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,3.0748,0.011652,ms/op,ShBFTriangle2D,262144,1.27983670302611,0.0625106884982691
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,3.610855,0.017855,ms/op,TriangleD2Lazy,262144,1.50296108960106,0.0734086874324891
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,4.191244,0.082925,ms/op,Adapt,262144,1.7445388000969,0.0852079966515674
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,4.419375,0.06129,ms/op,AdaptMacro,262144,1.8394947084155,0.089845900215311
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,4.437931,0.092641,ms/op,DefaultMacro,262144,1.8472183489324,0.0902231437224574
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,5.85884,0.049,ms/op,DDSlow,262144,2.43864917040376,0.119110225771172
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,5.860536,0.034974,ms/op,DDFast,262144,2.43935510348829,0.119144705453653
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,5.866061,0.034164,ms/op,DDNormalized,262144,2.44165479705673,0.119257028711736
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,10.666074,0.095299,ms/op,RelaxedIntervalTriangle2D,262144,4.43958403225981,0.2168413000239
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,10.995299,0.11278,ms/op,ReBfTriangle2D,262144,4.57661871371999,0.223534444755539
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,19.299353,0.236232,ms/op,RoundingIntervalTriangle2D,262144,8.03304940615877,0.392355874723929
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,19.541426,0.169132,ms/op,RoBfTriangle2D,262144,8.1338084507183,0.397277219168069
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,48.079155,0.596826,ms/op,SlowMacro,262144,20.0121852541567,0.977449291487251
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,49.188388,0.701872,ms/op,TriangleBF2,262144,20.4738858869159,1
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,49.527733,0.46679,ms/op,Slow,262144,20.615132857772,1.00689888434644
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,53.156094,0.530804,ms/op,ExactMacro,262144,22.1253805420534,1.08066346878454
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,61.993986,0.868133,ms/op,Exact,262144,25.8040128300008,1.26033782607391
+gep.java.benchmarks.triangles.area.SignedArea.bench,avgt,1,9,64.877673,0.83439,ms/op,RationalFloatTriangle2D,262144,27.0043017797339,1.31896318700259

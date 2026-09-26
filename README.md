@@ -9,8 +9,11 @@ I have created rough Java implementations of Jonathan Shewchuk's
 [expansions](https://www.cs.cmu.edu/afs/cs/project/quake/public/code/predicates.c)
 and compared the performance to `BigFloat`, a simpler (to my mind)
 implementation of high precision floating point numbers.
-The `BigFloat` predicates are roughly 5-20 times faster than my implementation of
-the expansion based ones, so I am archiving the Java expansion code here and 
+My implementation of expansion predicates take from 1-18 times as long 
+as the `BigFloat` ones, with about the same runtimes for orientation tests
+and expansion-based roughly 10-20 times longer for in circle.
+
+I am archiving the Java expansion code here and 
 proceeding with `BigFloat`.
 
 It is possible that a better Java implementation of expansions might change this,

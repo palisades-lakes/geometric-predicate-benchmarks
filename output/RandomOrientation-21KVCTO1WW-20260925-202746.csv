@@ -1,0 +1,25 @@
+Benchmark,Mode,Threads,Samples,Score,Score Error (99.9%),Unit,Param: className,Param: nTriangles,ratio,vs BF
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,2.275729,0.011982,ms/op,ShewchukIntervalTriangle2D,262144,0.87151410289993,0.0502434658661079
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,2.611236,0.052262,ms/op,TriangleD2Eager,262144,1,0.0576507777658728
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,2.896355,0.032926,ms/op,FastMacro,262144,1.10918928813788,0.0639456251507235
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,2.897898,0.027971,ms/op,InCircleNormalized,262144,1.10978019604509,0.0639796914511624
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,2.903378,0.025093,ms/op,DoubleNonRobust,262144,1.11187881907265,0.0641006787009387
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,2.907981,0.023374,ms/op,Fast,262144,1.11364158582373,0.0642023035751578
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,3.307218,0.011404,ms/op,ShBFTriangle2D,262144,1.26653354962937,0.073016644202705
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,3.6243,0.021672,ms/op,TriangleD2Lazy,262144,1.38796340123987,0.0800171695920449
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,4.355171,0.032644,ms/op,Adapt,262144,1.66785805649126,0.096153314159798
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,4.609673,0.048579,ms/op,DefaultMacro,262144,1.76532224586364,0.101772200481437
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,4.642217,0.081629,ms/op,AdaptMacro,262144,1.77778530933244,0.102490705783758
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,5.920103,0.025968,ms/op,DDSlow,262144,2.26716505133967,0.130703828533337
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,6.005089,0.029962,ms/op,DDFast,262144,2.29971132444559,0.132580146491274
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,6.033858,0.136269,ms/op,DDNormalized,262144,2.31072871237988,0.133215307474634
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,10.716448,0.080482,ms/op,RelaxedIntervalTriangle2D,262144,4.10397528220352,0.236597366950951
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,10.889719,0.125612,ms/op,ReBfTriangle2D,262144,4.17033121479637,0.240422838074308
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,19.216817,0.072125,ms/op,RoBfTriangle2D,262144,7.35928004975422,0.424268218665202
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,19.45169,0.091105,ms/op,RoundingIntervalTriangle2D,262144,7.44922710930762,0.429453736606209
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,45.294029,0.618711,ms/op,TriangleBF2,262144,17.3458197573869,1
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,48.953712,0.361041,ms/op,SlowMacro,262144,18.7473334466896,1.08079835423782
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,49.358069,0.52386,ms/op,Slow,262144,18.9021861677765,1.08972573404764
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,53.30565,0.541231,ms/op,ExactMacro,262144,20.4139533921867,1.17688029033584
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,64.560846,6.081676,ms/op,Exact,262144,24.7242478274656,1.42537211692958
+gep.java.benchmarks.triangles.area.RandomOrientation.bench,avgt,1,9,65.531931,0.731492,ms/op,RationalFloatTriangle2D,262144,25.0961349338015,1.44681169785095
