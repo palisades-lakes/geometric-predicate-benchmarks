@@ -109,7 +109,8 @@ public abstract class Base {
     points = (VectorD2[][]) pointGenerator.next();
     triangles = Triangle2D.convertTriangles(
       (Triangle2D[]) triangleGenerator.next(), className);
-    value = new int[3]; }
+    value = new int[3];
+    System.gc(); }
 
 //  @TearDown(Level.Invocation)
 //  public final void invocationTeardown () {

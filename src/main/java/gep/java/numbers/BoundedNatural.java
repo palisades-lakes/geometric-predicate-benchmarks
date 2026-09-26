@@ -18,7 +18,7 @@ import static gep.java.numbers.Numbers.*;
  * <code>int[nwords-1]</code>.
  * Each <code>int</code> word is treated as unsigned 32 bits,
  * using <code>long</code> arithmetic and
- * {@link Numbers#unsigned(int)}
+ * {@link gep.java.numbers.Numbers#unsigned(int)}
  * to convert the <code>int</code> bits
  * to the corresponding unsigned value in a <code>long</code>
  * <br>
@@ -60,7 +60,7 @@ import static gep.java.numbers.Numbers.*;
  * when the operation result exceeds the bound.
  *  <br>
  * @author palisades dot lakes at gmail dot com
- * @version 2026-09-05
+ * @version 2026-09-24
  */
 
 //
@@ -847,14 +847,17 @@ implements Ringlike<BoundedNatural> {
   @Override
   public final BoundedNatural square () {
     if (isZero()) { return zero(); }
-    if (isOne()) { return one(); }
+    //if (isOne()) { return one(); }
     final int n = hiInt();
+    final BoundedNatural tmp;
     if (n < KARATSUBA_SQUARE_THRESHOLD) {
-      return NaturalMultiply.squareSimple(this); }
-    if (n < TOOM_COOK_SQUARE_THRESHOLD) {
-      return NaturalMultiply.squareKaratsuba(this); }
+      tmp = NaturalMultiply.squareSimple(this); }
+    else if (n < TOOM_COOK_SQUARE_THRESHOLD) {
+      tmp = NaturalMultiply.squareKaratsuba(this); }
     // For a discussion of overflow detection see multiply()
-    return NaturalMultiply.squareToomCook3(this); }
+    else {
+      tmp =  NaturalMultiply.squareToomCook3(this); }
+    return tmp; }
 
   //--------------------------------------------------------------
   // multiply
@@ -1092,7 +1095,7 @@ implements Ringlike<BoundedNatural> {
       @Override
       public Object next () {
         // TODO: make this uniform over non-negative values
-        return BoundedNatural.unsafe((int[]) g.next()); } }; }
+        return BoundedNatural.make((int[]) g.next()); } }; }
 
   //--------------------------------------------------------------
   // construction
@@ -1120,13 +1123,14 @@ implements Ringlike<BoundedNatural> {
     return new BoundedNatural(Arrays.copyOf(words,end)); }
 
   //--------------------------------------------------------------
-//  /** If there are leading zeros, return a copy without them.
-//   *  If none, return <code>this</code>.
-//   */
-//  public final BoundedNatural compress () {
-//    final int hi = NaturalInts.hiInt(words());
-//    if (words().length == hi) { return this; }
-//    return new BoundedNatural(Arrays.copyOf(words(),hi)); }
+  /** If there are leading zeros, return a copy without them.
+   *  If none, return <code>this</code>.
+   */
+  @SuppressWarnings("unused")
+  public final BoundedNatural compress () {
+    final int hi = NaturalInts.hiInt(words());
+    if (words().length == hi) { return this; }
+    return new BoundedNatural(Arrays.copyOf(words(),hi)); }
 
   //--------------------------------------------------------------
   /** From a big endian {@code byte[]}, as produced by

@@ -8,12 +8,10 @@ import gep.java.prng.PRNG;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
 
-import java.util.Arrays;
-
 /** Benchmark triangle operations.
  *
  * @author palisades dot lakes at gmail dot com
- * @version 2026-09-09
+ * @version 2026-09-25
  */
 
 @State(Scope.Thread)
@@ -76,6 +74,7 @@ public abstract class Base {
   /** Re-initialize the prngs with the same seeds for each
    * test class.
    */
+  @SuppressWarnings("unused")
   @Setup(Level.Trial)
   public void trialSetup () {
     triangleGenerator =
@@ -86,11 +85,13 @@ public abstract class Base {
             PRNG.well44497b("seeds/Well44497b-2019-01-07.txt"),
             0.0, 1.0))); }
 
+  @SuppressWarnings("unused")
   @Setup(Level.Invocation)
   public void invocationSetup () {
     triangles = Triangle2D.convertTriangles(
       (Triangle2D[]) triangleGenerator.next(), className);
-    value = new int[3]; }
+    value = new int[3];
+    System.gc(); }
 
 //  @TearDown(Level.Invocation)
 //  public final void invocationTeardown () {

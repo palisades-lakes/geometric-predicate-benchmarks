@@ -134,7 +134,8 @@ public abstract class Base {
     tetrahedra = convertTetrahedra(
       (Tetrahedron3D[]) tetrahedronGenerator.next(),
       className);
-    value = new double[tetrahedra.length*points.length]; }
+    value = new double[tetrahedra.length*points.length];
+    System.gc();  }
 
   @Benchmark
   public final Object bench (final Blackhole blackhole) {

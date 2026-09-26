@@ -1,20 +1,17 @@
 package gep.java.benchmarks.triangles.area;
 
 import gep.java.benchmarks.triangles.Defaults;
-import gep.java.geometry.triangle.Triangle2D;
 
 /** <pre>
- * mvn -q install && jmh gep.java.benchmarks.triangles.area.SignedArea
+ * mvn -q install && jmh gep.java.benchmarks.triangles.area.All
  * </pre>
  * @author palisades dot lakes at gmail dot com
  * @version 2026-09-25
  */
 
-public class SignedArea extends Base {
-
-  @Override
-  public final double operation (final Triangle2D t) {
-    return t.twiceSignedArea(); }
+public class All extends Base {
 
   public static final void main (final String[] ignore)  {
+//    Defaults.run("ColinearOrientation");
+    Defaults.run("RandomOrientation");
     Defaults.run("SignedArea"); } }
