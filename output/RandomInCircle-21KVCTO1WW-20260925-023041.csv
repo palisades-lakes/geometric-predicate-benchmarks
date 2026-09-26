@@ -1,0 +1,25 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: className","Param: nPoints","Param: nTriangles"
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,1386.771567,14.020410,"ms/op",TriangleBF2,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,28.249754,0.726186,"ms/op",TriangleD2Eager,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,35.867835,1.710317,"ms/op",TriangleD2Lazy,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,293.197938,5.949460,"ms/op",RelaxedIntervalTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,835.443685,6.929452,"ms/op",RoundingIntervalTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,27.605218,0.378266,"ms/op",ShewchukIntervalTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,296.159823,5.046170,"ms/op",ReBfTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,839.779165,10.462428,"ms/op",RoBfTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,36.129707,0.608835,"ms/op",ShBFTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,2946.830173,31.178377,"ms/op",RationalFloatTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,37.880547,0.867946,"ms/op",Adapt,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,10445.273481,143.807761,"ms/op",Exact,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,30.720839,0.685013,"ms/op",Fast,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,10546.488719,184.908359,"ms/op",Slow,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,450.228681,6.072250,"ms/op",DDFast,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,267.158737,4.838560,"ms/op",DDNormalized,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,501.551311,8.769460,"ms/op",DDSlow,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,30.979859,0.956732,"ms/op",InCircleNormalized,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,29.948393,0.395285,"ms/op",DoubleNonRobust,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,90.506322,1.289606,"ms/op",AdaptMacro,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,89.661823,2.082447,"ms/op",DefaultMacro,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,11888.106015,192.041458,"ms/op",ExactMacro,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,30.639035,1.147498,"ms/op",FastMacro,2048,2048
+"gep.java.benchmarks.triangles.circle.RandomInCircle.bench","avgt",1,9,24805.249978,186.192069,"ms/op",SlowMacro,2048,2048

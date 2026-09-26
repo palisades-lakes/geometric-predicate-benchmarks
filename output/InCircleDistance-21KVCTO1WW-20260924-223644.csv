@@ -1,0 +1,25 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: className","Param: nPoints","Param: nTriangles"
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,1483.916365,30.042978,"ms/op",TriangleBF2,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,25.937863,0.417507,"ms/op",TriangleD2Eager,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,32.601088,0.433363,"ms/op",TriangleD2Lazy,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,291.947069,2.493617,"ms/op",RelaxedIntervalTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,834.579716,11.834225,"ms/op",RoundingIntervalTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,26.221260,0.509136,"ms/op",ShewchukIntervalTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,293.017935,5.585349,"ms/op",ReBfTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,820.886248,7.452678,"ms/op",RoBfTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,33.033311,1.963231,"ms/op",ShBFTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,2934.147091,17.253473,"ms/op",RationalFloatTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,35.129276,0.681295,"ms/op",Adapt,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,10420.393930,127.100749,"ms/op",Exact,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,28.566970,0.565634,"ms/op",Fast,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,10523.156696,163.906111,"ms/op",Slow,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,443.066362,5.254773,"ms/op",DDFast,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,260.298759,5.500566,"ms/op",DDNormalized,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,500.437495,7.542123,"ms/op",DDSlow,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,28.626550,0.540081,"ms/op",InCircleNormalized,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,26.846656,0.443748,"ms/op",DoubleNonRobust,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,87.926057,0.500694,"ms/op",AdaptMacro,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,87.053443,1.613335,"ms/op",DefaultMacro,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,11800.948059,106.148395,"ms/op",ExactMacro,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,28.485807,0.742454,"ms/op",FastMacro,2048,2048
+"gep.java.benchmarks.triangles.circle.InCircleDistance.bench","avgt",1,9,24843.684400,207.974889,"ms/op",SlowMacro,2048,2048

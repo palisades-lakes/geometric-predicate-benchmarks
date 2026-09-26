@@ -1,0 +1,25 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: className","Param: nPoints","Param: nTriangles"
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,1274.840909,16.017088,"ms/op",TriangleBF2,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,27.212616,1.453907,"ms/op",TriangleD2Eager,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,34.407007,0.917802,"ms/op",TriangleD2Lazy,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,289.794603,3.177441,"ms/op",RelaxedIntervalTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,776.958887,15.069915,"ms/op",RoundingIntervalTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,26.341021,0.222132,"ms/op",ShewchukIntervalTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,293.527406,5.095124,"ms/op",ReBfTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,785.343149,3.948189,"ms/op",RoBfTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,35.170743,0.784833,"ms/op",ShBFTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,3030.266329,19.871414,"ms/op",RationalFloatTriangle2D,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,36.244701,2.290771,"ms/op",Adapt,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,9665.676504,139.011016,"ms/op",Exact,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,29.698529,1.508201,"ms/op",Fast,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,7995.354117,54.619822,"ms/op",Slow,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,452.128792,6.423959,"ms/op",DDFast,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,267.100370,2.815367,"ms/op",DDNormalized,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,502.333558,6.737775,"ms/op",DDSlow,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,29.883944,0.537297,"ms/op",InCircleNormalized,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,29.530183,0.595447,"ms/op",DoubleNonRobust,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,88.967583,1.388030,"ms/op",AdaptMacro,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,88.772166,3.448902,"ms/op",DefaultMacro,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,10781.040922,76.617275,"ms/op",ExactMacro,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,30.594205,1.517700,"ms/op",FastMacro,2048,2048
+"gep.java.benchmarks.triangles.circle.CocircularInCircle.bench","avgt",1,9,23213.855489,367.338380,"ms/op",SlowMacro,2048,2048

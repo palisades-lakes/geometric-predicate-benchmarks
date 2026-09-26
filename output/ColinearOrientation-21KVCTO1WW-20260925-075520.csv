@@ -1,0 +1,25 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: className","Param: nTriangles"
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,39.798018,0.339816,"ms/op",TriangleBF2,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,2.853755,0.063962,"ms/op",TriangleD2Eager,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,3.919457,0.020055,"ms/op",TriangleD2Lazy,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,10.761984,0.076363,"ms/op",RelaxedIntervalTriangle2D,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,18.633040,0.111586,"ms/op",RoundingIntervalTriangle2D,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,2.621216,0.019444,"ms/op",ShewchukIntervalTriangle2D,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,55.550082,0.461056,"ms/op",ReBfTriangle2D,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,63.194268,0.458402,"ms/op",RoBfTriangle2D,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,50.140085,1.177720,"ms/op",ShBFTriangle2D,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,67.438323,0.468452,"ms/op",RationalFloatTriangle2D,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,11.903305,0.468041,"ms/op",Adapt,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,51.897523,0.391780,"ms/op",Exact,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,3.565169,0.041139,"ms/op",Fast,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,39.092227,0.338835,"ms/op",Slow,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,6.158343,0.034209,"ms/op",DDFast,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,6.187992,0.038430,"ms/op",DDNormalized,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,6.094275,0.036522,"ms/op",DDSlow,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,3.554236,0.023086,"ms/op",InCircleNormalized,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,3.387211,0.027974,"ms/op",DoubleNonRobust,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,7.708030,0.074503,"ms/op",AdaptMacro,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,7.718860,0.077323,"ms/op",DefaultMacro,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,43.534105,0.247097,"ms/op",ExactMacro,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,3.542592,0.025376,"ms/op",FastMacro,262144
+"gep.java.benchmarks.triangles.area.ColinearOrientation.bench","avgt",1,9,38.921337,0.588517,"ms/op",SlowMacro,262144
